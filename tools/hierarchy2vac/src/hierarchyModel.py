@@ -11,6 +11,7 @@ TODO:
 Changelog:
     2017.05.06  Initial version
 """
+import itertools
 
 
 class Policy:
@@ -87,6 +88,12 @@ class Hierarchy:
         else:
             return []
 
+    def getInclusiveSuperiorRoles(self, r):
+        if r in self._smaller_orders:
+            return [r] + self._smaller_orders[r]
+        else:
+            return [r]
+
     def getInferiorRoles(self, r):
         if r in self._larger_orders:
             return self._larger_orders[r]
@@ -161,6 +168,28 @@ class CARule:
         ret += ">"
         return ret
 
+    def toVACRuleExplodeHierarchy(self, hier):
+        ret = ""
+        for asr in hier.getInclusiveSuperiorRoles(self.admin):
+            # Cross product of every superior roles
+            if not self.precondition.isTrue:
+                positiveSet = []
+                nstr = ""
+                for index, c in enumerate(self.precondition.conjunct):
+                    if c.negative:   # Negative
+                        for sr in hier.getInclusiveSuperiorRoles(c.name):
+                            nstr += "&-%s" % sr
+                    else:  # Positive
+                        positiveSet.append(hier.getInclusiveSuperiorRoles(c.name))
+                for item in itertools.product(*positiveSet):
+                    pstr = "&".join(item)
+                    tmp = "<" + asr + ", " + pstr + nstr + ", " + self.target + ">"
+                    ret += tmp + "\n"
+            else:
+                tmp = "<" + asr + ", TRUE, " + self.target + ">"
+                ret += tmp + "\n"
+        return ret
+
 
 class Precondition:
 
@@ -204,6 +233,12 @@ class CRRule:
         for sr in hier.getSuperiorRoles(self.admin):
             ret += " | a.%s=1" % sr
         ret += ', t.%s=0>' % self.target
+        return ret
+
+    def toVACRuleExplodeHierarchy(self, hier):
+        ret = ""
+        for sr in hier.getInclusiveSuperiorRoles(self.admin):
+            ret += "<%s, %s>\n" % (sr, self.target)
         return ret
 
 

@@ -35,6 +35,11 @@ def getRandomChoice():
     return (not not random.getrandbits(1))
 
 
+def getChoiceByPercent(percent):
+    choices = [False] * (100 - percent) + [True] * percent
+    return random.choice(choices)
+
+
 def parsePolicy(inputfilename):
     if not os.path.isfile(inputfilename):
         print "Error: please provide correct input file"
@@ -75,6 +80,11 @@ def generatePolicy(args):
         rolestr += str(r) + "[1]\n"
     rolestr += ";\n\n"
 
+    old_rolestr = "ROLES\n"
+    for r in policy.roles:
+        old_rolestr += str(r) + "\n"
+    old_rolestr += ";\n\n"
+
     # For rules
     rulestr = "RULES\n"
     for ca_rule in policy.ca_rules:
@@ -83,56 +93,92 @@ def generatePolicy(args):
         rulestr += cr_rule.toVACRuleWithHierarchy(policy.hier) + "\n"
     rulestr += ";\n\n"
 
-    for index, q in enumerate(policy.queries):
+    old_rulestr = "CA\n"
+    for ca_rule in policy.ca_rules:
+        old_rulestr += ca_rule.toVACRuleExplodeHierarchy(policy.hier) + "\n"
+    old_rulestr += ";\n\nCR\n"
+    for cr_rule in policy.cr_rules:
+        old_rulestr += cr_rule.toVACRuleExplodeHierarchy(policy.hier) + "\n"
+    old_rulestr += ";\n\n"
+
+    for qindex, q in enumerate(policy.queries):
         # userlist = []
         userstr = "USERS\n"
+        old_userstr = "USERS\n"
         initstr = "INIT\n"
+        old_uastr = "UA\n"
         for i in range(0, args.nuser):
             # For user
             name = "user%s" % i
             userstr += name + "\n"
+            old_userstr += name + "\n"
             # userlist.append(name)
             # For init
             initstr += "<" + name
             for r in policy.roles:
-                if getRandomChoice():
+                if getChoiceByPercent(args.density):
                     initstr += ", " + str(r) + "=1"
+                    old_uastr += "<" + name + ", " + str(r) + ">\n"
                 else:
                     initstr += ", " + str(r) + "=0"
             initstr += '>\n'
 
+        old_unlimituserstr = "NEWUSERS\n"
         for i in range(0, args.nnewuser):
             name = "new_user%s" % i
             userstr += name + "*\n"
             # userlist.append(name)
             # For init
             initstr += "<" + name
+            tmplist = []
             for r in policy.roles:
-                if getRandomChoice():
+                if getChoiceByPercent(args.density):
                     initstr += ", " + str(r) + "=1"
+                    tmplist.append(str(r))
                 else:
                     initstr += ", " + str(r) + "=0"
             initstr += '>\n'
+            if len(tmplist) > 0:
+                old_unlimituserstr += "<" + name + ", " + "& ".join(tmplist) + ">\n"
+        old_unlimituserstr += ";\n\n"
 
         # For query
-        for index, ua in enumerate(q.ua_configs):
-            name = "quser%s" % index
+        for uindex, ua in enumerate(q.ua_configs):
+            name = "quser%s" % uindex
             userstr += name + "\n"
+            old_userstr += name + "\n"
             if len(ua) > 0:
                 initstr += "<" + name
                 for r in ua:
                     initstr += ", " + str(r) + "=1"
+                    old_uastr += "<" + name + ", " + str(r) + ">\n"
                 initstr += '>\n'
 
         querystr = "QUERY\n"
+        old_querystr = "SPEC\n"
         querystr += "quser%s" % q.user_index
-        for f, r in enumerate(q.goal):
+        old_querystr += "quser%s" % q.user_index
+        for goalindex, r in enumerate(q.goal):
             newquerystr = querystr + ".%s=1;\n\n" % r
+            old_newquerystr = old_querystr + " %s;\n\n" % r
             newuserstr = userstr + ";\n\n"
+            old_newuserstr = old_userstr + ";\n\n"
             newinitstr = initstr + ";\n\n"
+            old_newinitstr = old_uastr + ";\n\n"
             ret = newuserstr + rolestr + newinitstr + rulestr + newquerystr
-            saveFile(prefix + "%su_%snu_query%s_%s.txt" %
-                     (args.nuser, args.nnewuser, index, f), ret)
+            old_ret = old_newuserstr + old_unlimituserstr + old_rolestr + old_newinitstr + old_rulestr + old_newquerystr
+
+            if args.format == "new":
+                saveFile(prefix + "_%su_%snu_query%s_%s.txt" %
+                         (args.nuser, args.nnewuser, qindex, goalindex), ret)
+            elif args.format == "old":
+                saveFile(prefix + "_%su_%snu_query%s_%s_arbac.txt" %
+                         (args.nuser, args.nnewuser, qindex, goalindex), old_ret)
+            else:
+                saveFile(prefix + "_%su_%snu_query%s_%s.txt" %
+                         (args.nuser, args.nnewuser, qindex, goalindex), ret)
+                saveFile(prefix + "_%su_%snu_query%s_%s_arbac.txt" %
+                         (args.nuser, args.nnewuser, qindex, goalindex), old_ret)
 
 
 def main():
@@ -144,6 +190,12 @@ def main():
     parser.add_argument('-p', '--output', metavar='X',
                         help='output path',
                         type=str, dest='path', default="")
+    parser.add_argument('-f', '--format', metavar='X',
+                        help='output policy format {old, new, both}',
+                        type=str, dest='format', default="both")
+    parser.add_argument('-c', '--density', metavar='X',
+                        help='density of user-role assignment (default: 20%%)',
+                        type=int, dest='density', default=10)
     parser.add_argument('-n', '--users', metavar='X',
                         help='generate X normal users',
                         type=int, dest='nuser', default=2)
