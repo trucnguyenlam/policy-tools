@@ -1,0 +1,994 @@
+USERS
+user0
+user1
+user2
+user3
+user4
+user5
+user6
+user7
+user8
+user9
+user10
+user11
+user12
+user13
+user14
+user15
+user16
+user17
+user18
+user19
+user20
+user21
+user22
+user23
+user24
+user25
+user26
+user27
+user28
+user29
+user30
+user31
+user32
+user33
+user34
+user35
+user36
+user37
+user38
+user39
+user40
+user41
+user42
+user43
+user44
+user45
+user46
+user47
+user48
+user49
+user50
+user51
+user52
+user53
+user54
+user55
+user56
+user57
+user58
+user59
+user60
+user61
+user62
+user63
+user64
+user65
+user66
+user67
+user68
+user69
+user70
+user71
+user72
+user73
+user74
+user75
+user76
+user77
+user78
+user79
+user80
+user81
+user82
+user83
+user84
+user85
+user86
+user87
+user88
+user89
+user90
+user91
+user92
+user93
+user94
+user95
+user96
+user97
+user98
+quser0
+quser1
+;
+
+NEWUSERS
+;
+
+ROLES
+Student
+Undergrad
+Grad
+TA
+RA
+Grader
+GradStudOfficer
+HonorsStudent
+GradCommittee
+UndergradPermittedGradClass
+AdmissionsOfficer
+AssistantProf
+AssociateProf
+Dean
+DeanOfAdmissions
+DeptChair
+Employee
+FacilitiesCommittee
+FacilitiesDirector
+Faculty
+FullTimeEmployee
+GradAdmissionsCommittee
+HonorsPgmDirector
+Lecturer
+President
+Professor
+Provost
+QualExamCommittee
+QualExamCommitteeHead
+Staff
+TenuredFac
+AsstForStudentAffairs
+;
+
+UA
+<user0, Grader>
+<user0, FacilitiesCommittee>
+<user1, UndergradPermittedGradClass>
+<user1, HonorsPgmDirector>
+<user1, QualExamCommittee>
+<user2, Professor>
+<user3, Grader>
+<user4, Grader>
+<user4, AdmissionsOfficer>
+<user4, DeptChair>
+<user5, AssistantProf>
+<user5, FacilitiesCommittee>
+<user5, HonorsPgmDirector>
+<user5, Staff>
+<user6, Grader>
+<user6, Dean>
+<user6, Provost>
+<user7, RA>
+<user7, Employee>
+<user7, FacilitiesCommittee>
+<user7, Faculty>
+<user7, Lecturer>
+<user7, AsstForStudentAffairs>
+<user8, Employee>
+<user9, GradStudOfficer>
+<user10, QualExamCommittee>
+<user11, UndergradPermittedGradClass>
+<user11, AssistantProf>
+<user11, DeptChair>
+<user12, Student>
+<user12, Undergrad>
+<user12, Grad>
+<user12, GradStudOfficer>
+<user12, AdmissionsOfficer>
+<user12, AssociateProf>
+<user12, Faculty>
+<user12, QualExamCommittee>
+<user12, QualExamCommitteeHead>
+<user13, Grad>
+<user13, AssistantProf>
+<user13, Faculty>
+<user13, HonorsPgmDirector>
+<user14, RA>
+<user14, GradCommittee>
+<user14, DeptChair>
+<user14, GradAdmissionsCommittee>
+<user15, AsstForStudentAffairs>
+<user16, Grad>
+<user16, FullTimeEmployee>
+<user16, Lecturer>
+<user16, President>
+<user17, TA>
+<user17, Grader>
+<user17, AssociateProf>
+<user17, Dean>
+<user17, Faculty>
+<user17, GradAdmissionsCommittee>
+<user17, Provost>
+<user18, HonorsStudent>
+<user18, DeptChair>
+<user18, AsstForStudentAffairs>
+<user19, GradCommittee>
+<user19, FullTimeEmployee>
+<user20, HonorsStudent>
+<user20, DeptChair>
+<user20, GradAdmissionsCommittee>
+<user20, TenuredFac>
+<user21, Lecturer>
+<user21, QualExamCommitteeHead>
+<user22, GradStudOfficer>
+<user22, AssistantProf>
+<user22, President>
+<user22, TenuredFac>
+<user23, Employee>
+<user23, Faculty>
+<user23, GradAdmissionsCommittee>
+<user24, Grader>
+<user24, Dean>
+<user24, Provost>
+<user24, QualExamCommittee>
+<user24, AsstForStudentAffairs>
+<user25, FacilitiesCommittee>
+<user25, President>
+<user26, Student>
+<user26, Lecturer>
+<user27, TA>
+<user27, FullTimeEmployee>
+<user27, Professor>
+<user27, Staff>
+<user28, GradCommittee>
+<user28, AssistantProf>
+<user28, Dean>
+<user28, DeptChair>
+<user28, Provost>
+<user28, QualExamCommitteeHead>
+<user29, Student>
+<user29, Faculty>
+<user29, Professor>
+<user30, Faculty>
+<user30, Provost>
+<user32, DeanOfAdmissions>
+<user32, Professor>
+<user32, QualExamCommitteeHead>
+<user33, HonorsStudent>
+<user33, AsstForStudentAffairs>
+<user34, FullTimeEmployee>
+<user34, Lecturer>
+<user34, TenuredFac>
+<user35, TA>
+<user35, UndergradPermittedGradClass>
+<user35, DeanOfAdmissions>
+<user35, FullTimeEmployee>
+<user36, HonorsStudent>
+<user36, AssistantProf>
+<user36, Dean>
+<user36, HonorsPgmDirector>
+<user36, Lecturer>
+<user36, Staff>
+<user36, TenuredFac>
+<user37, Grader>
+<user37, GradStudOfficer>
+<user37, AssistantProf>
+<user37, TenuredFac>
+<user38, AdmissionsOfficer>
+<user38, DeanOfAdmissions>
+<user38, FullTimeEmployee>
+<user39, Grad>
+<user39, Grader>
+<user39, Employee>
+<user39, FacilitiesDirector>
+<user39, GradAdmissionsCommittee>
+<user39, Lecturer>
+<user39, Staff>
+<user40, Grad>
+<user40, DeptChair>
+<user40, QualExamCommittee>
+<user40, TenuredFac>
+<user41, FullTimeEmployee>
+<user41, Provost>
+<user41, TenuredFac>
+<user42, RA>
+<user42, AdmissionsOfficer>
+<user42, AssistantProf>
+<user42, Dean>
+<user42, DeanOfAdmissions>
+<user42, President>
+<user42, AsstForStudentAffairs>
+<user43, Grad>
+<user43, QualExamCommitteeHead>
+<user44, AssistantProf>
+<user44, AssociateProf>
+<user44, DeanOfAdmissions>
+<user45, AssistantProf>
+<user45, QualExamCommittee>
+<user45, Staff>
+<user46, Undergrad>
+<user46, GradStudOfficer>
+<user46, HonorsStudent>
+<user46, AsstForStudentAffairs>
+<user47, Grader>
+<user47, HonorsStudent>
+<user47, FacilitiesDirector>
+<user47, Professor>
+<user47, AsstForStudentAffairs>
+<user48, GradStudOfficer>
+<user49, Grad>
+<user49, RA>
+<user49, GradCommittee>
+<user49, Faculty>
+<user50, TA>
+<user50, Grader>
+<user50, DeptChair>
+<user51, Grad>
+<user51, AssistantProf>
+<user51, FacilitiesCommittee>
+<user51, AsstForStudentAffairs>
+<user52, Employee>
+<user53, FacilitiesDirector>
+<user53, Staff>
+<user54, GradCommittee>
+<user54, DeptChair>
+<user56, DeanOfAdmissions>
+<user56, FacilitiesDirector>
+<user56, HonorsPgmDirector>
+<user56, AsstForStudentAffairs>
+<user57, GradStudOfficer>
+<user57, AdmissionsOfficer>
+<user57, DeanOfAdmissions>
+<user57, GradAdmissionsCommittee>
+<user57, HonorsPgmDirector>
+<user57, Staff>
+<user58, Student>
+<user59, Dean>
+<user60, HonorsStudent>
+<user60, UndergradPermittedGradClass>
+<user60, FacilitiesCommittee>
+<user60, FacilitiesDirector>
+<user60, Provost>
+<user61, Undergrad>
+<user61, Provost>
+<user61, QualExamCommittee>
+<user61, QualExamCommitteeHead>
+<user62, RA>
+<user62, AdmissionsOfficer>
+<user63, DeptChair>
+<user63, GradAdmissionsCommittee>
+<user63, President>
+<user64, Faculty>
+<user64, AsstForStudentAffairs>
+<user65, HonorsStudent>
+<user65, AdmissionsOfficer>
+<user65, TenuredFac>
+<user66, Undergrad>
+<user66, FacilitiesDirector>
+<user66, President>
+<user66, AsstForStudentAffairs>
+<user67, RA>
+<user67, GradStudOfficer>
+<user67, FullTimeEmployee>
+<user68, DeanOfAdmissions>
+<user68, President>
+<user68, QualExamCommittee>
+<user70, GradStudOfficer>
+<user70, GradCommittee>
+<user70, UndergradPermittedGradClass>
+<user70, FacilitiesDirector>
+<user70, FullTimeEmployee>
+<user71, Grader>
+<user71, HonorsStudent>
+<user71, GradCommittee>
+<user71, UndergradPermittedGradClass>
+<user72, Grad>
+<user72, HonorsStudent>
+<user72, AssociateProf>
+<user72, FacilitiesCommittee>
+<user72, GradAdmissionsCommittee>
+<user73, UndergradPermittedGradClass>
+<user73, Lecturer>
+<user73, Staff>
+<user75, RA>
+<user75, GradCommittee>
+<user75, GradAdmissionsCommittee>
+<user75, Staff>
+<user76, FullTimeEmployee>
+<user76, HonorsPgmDirector>
+<user77, Professor>
+<user78, Employee>
+<user78, QualExamCommitteeHead>
+<user78, Staff>
+<user79, Grad>
+<user80, Student>
+<user80, QualExamCommittee>
+<user80, TenuredFac>
+<user82, Grader>
+<user82, HonorsStudent>
+<user82, GradCommittee>
+<user82, Dean>
+<user82, Lecturer>
+<user83, AssistantProf>
+<user83, Staff>
+<user84, HonorsStudent>
+<user85, Student>
+<user85, Grader>
+<user85, Staff>
+<user87, Faculty>
+<user88, GradCommittee>
+<user88, FacilitiesDirector>
+<user88, Lecturer>
+<user88, Provost>
+<user89, AssistantProf>
+<user90, DeanOfAdmissions>
+<user90, Provost>
+<user91, HonorsPgmDirector>
+<user92, AssociateProf>
+<user92, DeptChair>
+<user92, HonorsPgmDirector>
+<user92, AsstForStudentAffairs>
+<user93, FacilitiesCommittee>
+<user94, Grad>
+<user94, TA>
+<user94, GradStudOfficer>
+<user94, AssociateProf>
+<user94, Employee>
+<user95, GradCommittee>
+<user95, AdmissionsOfficer>
+<user95, AssistantProf>
+<user95, FacilitiesCommittee>
+<user95, President>
+<user96, RA>
+<user96, DeptChair>
+<user96, GradAdmissionsCommittee>
+<user96, AsstForStudentAffairs>
+<user97, TA>
+<user97, GradCommittee>
+<user97, AssistantProf>
+<user97, AssociateProf>
+<user97, Lecturer>
+<user97, Provost>
+<user98, UndergradPermittedGradClass>
+<user98, FacilitiesCommittee>
+<user98, AsstForStudentAffairs>
+<quser0, DeptChair>
+<quser1, Undergrad>
+;
+
+CA
+<AdmissionsOfficer, TRUE, Undergrad>
+<DeanOfAdmissions, TRUE, Undergrad>
+<Provost, TRUE, Undergrad>
+
+<DeptChair, Grad, TA>
+<DeptChair, TA, TA>
+<DeptChair, RA, TA>
+<Dean, Grad, TA>
+<Dean, TA, TA>
+<Dean, RA, TA>
+<Provost, Grad, TA>
+<Provost, TA, TA>
+<Provost, RA, TA>
+<President, Grad, TA>
+<President, TA, TA>
+<President, RA, TA>
+
+<DeptChair, Grad, GradStudOfficer>
+<DeptChair, TA, GradStudOfficer>
+<DeptChair, RA, GradStudOfficer>
+<Dean, Grad, GradStudOfficer>
+<Dean, TA, GradStudOfficer>
+<Dean, RA, GradStudOfficer>
+<Provost, Grad, GradStudOfficer>
+<Provost, TA, GradStudOfficer>
+<Provost, RA, GradStudOfficer>
+<President, Grad, GradStudOfficer>
+<President, TA, GradStudOfficer>
+<President, RA, GradStudOfficer>
+
+<DeptChair, GradStudOfficer, GradCommittee>
+<Dean, GradStudOfficer, GradCommittee>
+<Provost, GradStudOfficer, GradCommittee>
+<President, GradStudOfficer, GradCommittee>
+
+<DeptChair, Undergrad, Grader>
+<DeptChair, Grader, Grader>
+<Dean, Undergrad, Grader>
+<Dean, Grader, Grader>
+<Provost, Undergrad, Grader>
+<Provost, Grader, Grader>
+<President, Undergrad, Grader>
+<President, Grader, Grader>
+
+<Faculty, Student, RA>
+<Faculty, Undergrad, RA>
+<Faculty, Grad, RA>
+<Lecturer, Student, RA>
+<Lecturer, Undergrad, RA>
+<Lecturer, Grad, RA>
+<AssistantProf, Student, RA>
+<AssistantProf, Undergrad, RA>
+<AssistantProf, Grad, RA>
+<AssociateProf, Student, RA>
+<AssociateProf, Undergrad, RA>
+<AssociateProf, Grad, RA>
+<Professor, Student, RA>
+<Professor, Undergrad, RA>
+<Professor, Grad, RA>
+<DeptChair, Student, RA>
+<DeptChair, Undergrad, RA>
+<DeptChair, Grad, RA>
+<Dean, Student, RA>
+<Dean, Undergrad, RA>
+<Dean, Grad, RA>
+<Provost, Student, RA>
+<Provost, Undergrad, RA>
+<Provost, Grad, RA>
+<President, Student, RA>
+<President, Undergrad, RA>
+<President, Grad, RA>
+
+<GradAdmissionsCommittee, TRUE, Grad>
+
+<HonorsPgmDirector, Undergrad, HonorsStudent>
+<HonorsPgmDirector, Grader, HonorsStudent>
+
+<Faculty, Undergrad, UndergradPermittedGradClass>
+<Faculty, Grader, UndergradPermittedGradClass>
+<Lecturer, Undergrad, UndergradPermittedGradClass>
+<Lecturer, Grader, UndergradPermittedGradClass>
+<AssistantProf, Undergrad, UndergradPermittedGradClass>
+<AssistantProf, Grader, UndergradPermittedGradClass>
+<AssociateProf, Undergrad, UndergradPermittedGradClass>
+<AssociateProf, Grader, UndergradPermittedGradClass>
+<Professor, Undergrad, UndergradPermittedGradClass>
+<Professor, Grader, UndergradPermittedGradClass>
+<DeptChair, Undergrad, UndergradPermittedGradClass>
+<DeptChair, Grader, UndergradPermittedGradClass>
+<Dean, Undergrad, UndergradPermittedGradClass>
+<Dean, Grader, UndergradPermittedGradClass>
+<Provost, Undergrad, UndergradPermittedGradClass>
+<Provost, Grader, UndergradPermittedGradClass>
+<President, Undergrad, UndergradPermittedGradClass>
+<President, Grader, UndergradPermittedGradClass>
+
+<Dean, Professor&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<Dean, DeptChair&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<Dean, Dean&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<Dean, Provost&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<Dean, President&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<Provost, Professor&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<Provost, DeptChair&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<Provost, Dean&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<Provost, Provost&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<Provost, President&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<President, Professor&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<President, DeptChair&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<President, Dean&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<President, Provost&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+<President, President&-Dean&-Provost&-President&-Provost&-President, DeptChair>
+
+<Dean, Staff, AsstForStudentAffairs>
+<Dean, AdmissionsOfficer, AsstForStudentAffairs>
+<Dean, DeanOfAdmissions, AsstForStudentAffairs>
+<Dean, Provost, AsstForStudentAffairs>
+<Provost, Staff, AsstForStudentAffairs>
+<Provost, AdmissionsOfficer, AsstForStudentAffairs>
+<Provost, DeanOfAdmissions, AsstForStudentAffairs>
+<Provost, Provost, AsstForStudentAffairs>
+<President, Staff, AsstForStudentAffairs>
+<President, AdmissionsOfficer, AsstForStudentAffairs>
+<President, DeanOfAdmissions, AsstForStudentAffairs>
+<President, Provost, AsstForStudentAffairs>
+
+<DeanOfAdmissions, Staff, AdmissionsOfficer>
+<DeanOfAdmissions, AdmissionsOfficer, AdmissionsOfficer>
+<DeanOfAdmissions, DeanOfAdmissions, AdmissionsOfficer>
+<DeanOfAdmissions, Provost, AdmissionsOfficer>
+<Provost, Staff, AdmissionsOfficer>
+<Provost, AdmissionsOfficer, AdmissionsOfficer>
+<Provost, DeanOfAdmissions, AdmissionsOfficer>
+<Provost, Provost, AdmissionsOfficer>
+
+<DeptChair, Faculty, GradAdmissionsCommittee>
+<DeptChair, Lecturer, GradAdmissionsCommittee>
+<DeptChair, AssistantProf, GradAdmissionsCommittee>
+<DeptChair, AssociateProf, GradAdmissionsCommittee>
+<DeptChair, Professor, GradAdmissionsCommittee>
+<DeptChair, DeptChair, GradAdmissionsCommittee>
+<DeptChair, Dean, GradAdmissionsCommittee>
+<DeptChair, Provost, GradAdmissionsCommittee>
+<DeptChair, President, GradAdmissionsCommittee>
+<Dean, Faculty, GradAdmissionsCommittee>
+<Dean, Lecturer, GradAdmissionsCommittee>
+<Dean, AssistantProf, GradAdmissionsCommittee>
+<Dean, AssociateProf, GradAdmissionsCommittee>
+<Dean, Professor, GradAdmissionsCommittee>
+<Dean, DeptChair, GradAdmissionsCommittee>
+<Dean, Dean, GradAdmissionsCommittee>
+<Dean, Provost, GradAdmissionsCommittee>
+<Dean, President, GradAdmissionsCommittee>
+<Provost, Faculty, GradAdmissionsCommittee>
+<Provost, Lecturer, GradAdmissionsCommittee>
+<Provost, AssistantProf, GradAdmissionsCommittee>
+<Provost, AssociateProf, GradAdmissionsCommittee>
+<Provost, Professor, GradAdmissionsCommittee>
+<Provost, DeptChair, GradAdmissionsCommittee>
+<Provost, Dean, GradAdmissionsCommittee>
+<Provost, Provost, GradAdmissionsCommittee>
+<Provost, President, GradAdmissionsCommittee>
+<President, Faculty, GradAdmissionsCommittee>
+<President, Lecturer, GradAdmissionsCommittee>
+<President, AssistantProf, GradAdmissionsCommittee>
+<President, AssociateProf, GradAdmissionsCommittee>
+<President, Professor, GradAdmissionsCommittee>
+<President, DeptChair, GradAdmissionsCommittee>
+<President, Dean, GradAdmissionsCommittee>
+<President, Provost, GradAdmissionsCommittee>
+<President, President, GradAdmissionsCommittee>
+
+<DeptChair, Faculty, GradCommittee>
+<DeptChair, Lecturer, GradCommittee>
+<DeptChair, AssistantProf, GradCommittee>
+<DeptChair, AssociateProf, GradCommittee>
+<DeptChair, Professor, GradCommittee>
+<DeptChair, DeptChair, GradCommittee>
+<DeptChair, Dean, GradCommittee>
+<DeptChair, Provost, GradCommittee>
+<DeptChair, President, GradCommittee>
+<Dean, Faculty, GradCommittee>
+<Dean, Lecturer, GradCommittee>
+<Dean, AssistantProf, GradCommittee>
+<Dean, AssociateProf, GradCommittee>
+<Dean, Professor, GradCommittee>
+<Dean, DeptChair, GradCommittee>
+<Dean, Dean, GradCommittee>
+<Dean, Provost, GradCommittee>
+<Dean, President, GradCommittee>
+<Provost, Faculty, GradCommittee>
+<Provost, Lecturer, GradCommittee>
+<Provost, AssistantProf, GradCommittee>
+<Provost, AssociateProf, GradCommittee>
+<Provost, Professor, GradCommittee>
+<Provost, DeptChair, GradCommittee>
+<Provost, Dean, GradCommittee>
+<Provost, Provost, GradCommittee>
+<Provost, President, GradCommittee>
+<President, Faculty, GradCommittee>
+<President, Lecturer, GradCommittee>
+<President, AssistantProf, GradCommittee>
+<President, AssociateProf, GradCommittee>
+<President, Professor, GradCommittee>
+<President, DeptChair, GradCommittee>
+<President, Dean, GradCommittee>
+<President, Provost, GradCommittee>
+<President, President, GradCommittee>
+
+<DeptChair, Faculty, HonorsPgmDirector>
+<DeptChair, Lecturer, HonorsPgmDirector>
+<DeptChair, AssistantProf, HonorsPgmDirector>
+<DeptChair, AssociateProf, HonorsPgmDirector>
+<DeptChair, Professor, HonorsPgmDirector>
+<DeptChair, DeptChair, HonorsPgmDirector>
+<DeptChair, Dean, HonorsPgmDirector>
+<DeptChair, Provost, HonorsPgmDirector>
+<DeptChair, President, HonorsPgmDirector>
+<Dean, Faculty, HonorsPgmDirector>
+<Dean, Lecturer, HonorsPgmDirector>
+<Dean, AssistantProf, HonorsPgmDirector>
+<Dean, AssociateProf, HonorsPgmDirector>
+<Dean, Professor, HonorsPgmDirector>
+<Dean, DeptChair, HonorsPgmDirector>
+<Dean, Dean, HonorsPgmDirector>
+<Dean, Provost, HonorsPgmDirector>
+<Dean, President, HonorsPgmDirector>
+<Provost, Faculty, HonorsPgmDirector>
+<Provost, Lecturer, HonorsPgmDirector>
+<Provost, AssistantProf, HonorsPgmDirector>
+<Provost, AssociateProf, HonorsPgmDirector>
+<Provost, Professor, HonorsPgmDirector>
+<Provost, DeptChair, HonorsPgmDirector>
+<Provost, Dean, HonorsPgmDirector>
+<Provost, Provost, HonorsPgmDirector>
+<Provost, President, HonorsPgmDirector>
+<President, Faculty, HonorsPgmDirector>
+<President, Lecturer, HonorsPgmDirector>
+<President, AssistantProf, HonorsPgmDirector>
+<President, AssociateProf, HonorsPgmDirector>
+<President, Professor, HonorsPgmDirector>
+<President, DeptChair, HonorsPgmDirector>
+<President, Dean, HonorsPgmDirector>
+<President, Provost, HonorsPgmDirector>
+<President, President, HonorsPgmDirector>
+
+<DeptChair, Employee, FacilitiesCommittee>
+<DeptChair, Staff, FacilitiesCommittee>
+<DeptChair, AdmissionsOfficer, FacilitiesCommittee>
+<DeptChair, DeanOfAdmissions, FacilitiesCommittee>
+<DeptChair, Provost, FacilitiesCommittee>
+<DeptChair, Faculty, FacilitiesCommittee>
+<DeptChair, Lecturer, FacilitiesCommittee>
+<DeptChair, Faculty, FacilitiesCommittee>
+<DeptChair, AssistantProf, FacilitiesCommittee>
+<DeptChair, AssociateProf, FacilitiesCommittee>
+<DeptChair, Professor, FacilitiesCommittee>
+<DeptChair, DeptChair, FacilitiesCommittee>
+<DeptChair, Dean, FacilitiesCommittee>
+<DeptChair, Provost, FacilitiesCommittee>
+<DeptChair, President, FacilitiesCommittee>
+<Dean, Employee, FacilitiesCommittee>
+<Dean, Staff, FacilitiesCommittee>
+<Dean, AdmissionsOfficer, FacilitiesCommittee>
+<Dean, DeanOfAdmissions, FacilitiesCommittee>
+<Dean, Provost, FacilitiesCommittee>
+<Dean, Faculty, FacilitiesCommittee>
+<Dean, Lecturer, FacilitiesCommittee>
+<Dean, Faculty, FacilitiesCommittee>
+<Dean, AssistantProf, FacilitiesCommittee>
+<Dean, AssociateProf, FacilitiesCommittee>
+<Dean, Professor, FacilitiesCommittee>
+<Dean, DeptChair, FacilitiesCommittee>
+<Dean, Dean, FacilitiesCommittee>
+<Dean, Provost, FacilitiesCommittee>
+<Dean, President, FacilitiesCommittee>
+<Provost, Employee, FacilitiesCommittee>
+<Provost, Staff, FacilitiesCommittee>
+<Provost, AdmissionsOfficer, FacilitiesCommittee>
+<Provost, DeanOfAdmissions, FacilitiesCommittee>
+<Provost, Provost, FacilitiesCommittee>
+<Provost, Faculty, FacilitiesCommittee>
+<Provost, Lecturer, FacilitiesCommittee>
+<Provost, Faculty, FacilitiesCommittee>
+<Provost, AssistantProf, FacilitiesCommittee>
+<Provost, AssociateProf, FacilitiesCommittee>
+<Provost, Professor, FacilitiesCommittee>
+<Provost, DeptChair, FacilitiesCommittee>
+<Provost, Dean, FacilitiesCommittee>
+<Provost, Provost, FacilitiesCommittee>
+<Provost, President, FacilitiesCommittee>
+<President, Employee, FacilitiesCommittee>
+<President, Staff, FacilitiesCommittee>
+<President, AdmissionsOfficer, FacilitiesCommittee>
+<President, DeanOfAdmissions, FacilitiesCommittee>
+<President, Provost, FacilitiesCommittee>
+<President, Faculty, FacilitiesCommittee>
+<President, Lecturer, FacilitiesCommittee>
+<President, Faculty, FacilitiesCommittee>
+<President, AssistantProf, FacilitiesCommittee>
+<President, AssociateProf, FacilitiesCommittee>
+<President, Professor, FacilitiesCommittee>
+<President, DeptChair, FacilitiesCommittee>
+<President, Dean, FacilitiesCommittee>
+<President, Provost, FacilitiesCommittee>
+<President, President, FacilitiesCommittee>
+
+<DeptChair, Faculty, FacilitiesDirector>
+<DeptChair, Lecturer, FacilitiesDirector>
+<DeptChair, AssistantProf, FacilitiesDirector>
+<DeptChair, AssociateProf, FacilitiesDirector>
+<DeptChair, Professor, FacilitiesDirector>
+<DeptChair, DeptChair, FacilitiesDirector>
+<DeptChair, Dean, FacilitiesDirector>
+<DeptChair, Provost, FacilitiesDirector>
+<DeptChair, President, FacilitiesDirector>
+<Dean, Faculty, FacilitiesDirector>
+<Dean, Lecturer, FacilitiesDirector>
+<Dean, AssistantProf, FacilitiesDirector>
+<Dean, AssociateProf, FacilitiesDirector>
+<Dean, Professor, FacilitiesDirector>
+<Dean, DeptChair, FacilitiesDirector>
+<Dean, Dean, FacilitiesDirector>
+<Dean, Provost, FacilitiesDirector>
+<Dean, President, FacilitiesDirector>
+<Provost, Faculty, FacilitiesDirector>
+<Provost, Lecturer, FacilitiesDirector>
+<Provost, AssistantProf, FacilitiesDirector>
+<Provost, AssociateProf, FacilitiesDirector>
+<Provost, Professor, FacilitiesDirector>
+<Provost, DeptChair, FacilitiesDirector>
+<Provost, Dean, FacilitiesDirector>
+<Provost, Provost, FacilitiesDirector>
+<Provost, President, FacilitiesDirector>
+<President, Faculty, FacilitiesDirector>
+<President, Lecturer, FacilitiesDirector>
+<President, AssistantProf, FacilitiesDirector>
+<President, AssociateProf, FacilitiesDirector>
+<President, Professor, FacilitiesDirector>
+<President, DeptChair, FacilitiesDirector>
+<President, Dean, FacilitiesDirector>
+<President, Provost, FacilitiesDirector>
+<President, President, FacilitiesDirector>
+
+<DeptChair, Faculty, QualExamCommittee>
+<DeptChair, Lecturer, QualExamCommittee>
+<DeptChair, AssistantProf, QualExamCommittee>
+<DeptChair, AssociateProf, QualExamCommittee>
+<DeptChair, Professor, QualExamCommittee>
+<DeptChair, DeptChair, QualExamCommittee>
+<DeptChair, Dean, QualExamCommittee>
+<DeptChair, Provost, QualExamCommittee>
+<DeptChair, President, QualExamCommittee>
+<Dean, Faculty, QualExamCommittee>
+<Dean, Lecturer, QualExamCommittee>
+<Dean, AssistantProf, QualExamCommittee>
+<Dean, AssociateProf, QualExamCommittee>
+<Dean, Professor, QualExamCommittee>
+<Dean, DeptChair, QualExamCommittee>
+<Dean, Dean, QualExamCommittee>
+<Dean, Provost, QualExamCommittee>
+<Dean, President, QualExamCommittee>
+<Provost, Faculty, QualExamCommittee>
+<Provost, Lecturer, QualExamCommittee>
+<Provost, AssistantProf, QualExamCommittee>
+<Provost, AssociateProf, QualExamCommittee>
+<Provost, Professor, QualExamCommittee>
+<Provost, DeptChair, QualExamCommittee>
+<Provost, Dean, QualExamCommittee>
+<Provost, Provost, QualExamCommittee>
+<Provost, President, QualExamCommittee>
+<President, Faculty, QualExamCommittee>
+<President, Lecturer, QualExamCommittee>
+<President, AssistantProf, QualExamCommittee>
+<President, AssociateProf, QualExamCommittee>
+<President, Professor, QualExamCommittee>
+<President, DeptChair, QualExamCommittee>
+<President, Dean, QualExamCommittee>
+<President, Provost, QualExamCommittee>
+<President, President, QualExamCommittee>
+
+<DeptChair, GradCommittee, QualExamCommitteeHead>
+<Dean, GradCommittee, QualExamCommitteeHead>
+<Provost, GradCommittee, QualExamCommitteeHead>
+<President, GradCommittee, QualExamCommitteeHead>
+
+<President, TRUE, Staff>
+
+<President, TRUE, DeanOfAdmissions>
+
+<President, TRUE, Lecturer>
+
+<President, TRUE, AssistantProf>
+
+<President, TRUE, AssociateProf>
+
+<President, TRUE, Professor>
+
+<President, Employee, FullTimeEmployee>
+<President, Staff, FullTimeEmployee>
+<President, AdmissionsOfficer, FullTimeEmployee>
+<President, DeanOfAdmissions, FullTimeEmployee>
+<President, Provost, FullTimeEmployee>
+<President, Faculty, FullTimeEmployee>
+<President, Lecturer, FullTimeEmployee>
+<President, Faculty, FullTimeEmployee>
+<President, AssistantProf, FullTimeEmployee>
+<President, AssociateProf, FullTimeEmployee>
+<President, Professor, FullTimeEmployee>
+<President, DeptChair, FullTimeEmployee>
+<President, Dean, FullTimeEmployee>
+<President, Provost, FullTimeEmployee>
+<President, President, FullTimeEmployee>
+
+<President, Professor&-DeptChair&-Dean&-Provost&-President, Provost>
+<President, DeptChair&-DeptChair&-Dean&-Provost&-President, Provost>
+<President, Dean&-DeptChair&-Dean&-Provost&-President, Provost>
+<President, Provost&-DeptChair&-Dean&-Provost&-President, Provost>
+<President, President&-DeptChair&-Dean&-Provost&-President, Provost>
+
+<Provost, Professor&-DeptChair&-Dean&-Provost&-President, Dean>
+<Provost, DeptChair&-DeptChair&-Dean&-Provost&-President, Dean>
+<Provost, Dean&-DeptChair&-Dean&-Provost&-President, Dean>
+<Provost, Provost&-DeptChair&-Dean&-Provost&-President, Dean>
+<Provost, President&-DeptChair&-Dean&-Provost&-President, Dean>
+<President, Professor&-DeptChair&-Dean&-Provost&-President, Dean>
+<President, DeptChair&-DeptChair&-Dean&-Provost&-President, Dean>
+<President, Dean&-DeptChair&-Dean&-Provost&-President, Dean>
+<President, Provost&-DeptChair&-Dean&-Provost&-President, Dean>
+<President, President&-DeptChair&-Dean&-Provost&-President, Dean>
+
+;
+
+CR
+<DeptChair, TA>
+<Dean, TA>
+<Provost, TA>
+<President, TA>
+
+<DeptChair, GradStudOfficer>
+<Dean, GradStudOfficer>
+<Provost, GradStudOfficer>
+<President, GradStudOfficer>
+
+<DeptChair, GradCommittee>
+<Dean, GradCommittee>
+<Provost, GradCommittee>
+<President, GradCommittee>
+
+<DeptChair, Grader>
+<Dean, Grader>
+<Provost, Grader>
+<President, Grader>
+
+<Faculty, RA>
+<Lecturer, RA>
+<AssistantProf, RA>
+<AssociateProf, RA>
+<Professor, RA>
+<DeptChair, RA>
+<Dean, RA>
+<Provost, RA>
+<President, RA>
+
+<HonorsPgmDirector, HonorsStudent>
+
+<Faculty, UndergradPermittedGradClass>
+<Lecturer, UndergradPermittedGradClass>
+<AssistantProf, UndergradPermittedGradClass>
+<AssociateProf, UndergradPermittedGradClass>
+<Professor, UndergradPermittedGradClass>
+<DeptChair, UndergradPermittedGradClass>
+<Dean, UndergradPermittedGradClass>
+<Provost, UndergradPermittedGradClass>
+<President, UndergradPermittedGradClass>
+
+<Dean, DeptChair>
+<Provost, DeptChair>
+<President, DeptChair>
+
+<Dean, AsstForStudentAffairs>
+<Provost, AsstForStudentAffairs>
+<President, AsstForStudentAffairs>
+
+<DeanOfAdmissions, AdmissionsOfficer>
+<Provost, AdmissionsOfficer>
+
+<DeptChair, GradAdmissionsCommittee>
+<Dean, GradAdmissionsCommittee>
+<Provost, GradAdmissionsCommittee>
+<President, GradAdmissionsCommittee>
+
+<DeptChair, GradCommittee>
+<Dean, GradCommittee>
+<Provost, GradCommittee>
+<President, GradCommittee>
+
+<DeptChair, HonorsPgmDirector>
+<Dean, HonorsPgmDirector>
+<Provost, HonorsPgmDirector>
+<President, HonorsPgmDirector>
+
+<DeptChair, FacilitiesCommittee>
+<Dean, FacilitiesCommittee>
+<Provost, FacilitiesCommittee>
+<President, FacilitiesCommittee>
+
+<DeptChair, FacilitiesDirector>
+<Dean, FacilitiesDirector>
+<Provost, FacilitiesDirector>
+<President, FacilitiesDirector>
+
+<DeptChair, QualExamCommittee>
+<Dean, QualExamCommittee>
+<Provost, QualExamCommittee>
+<President, QualExamCommittee>
+
+<DeptChair, QualExamCommitteeHead>
+<Dean, QualExamCommitteeHead>
+<Provost, QualExamCommitteeHead>
+<President, QualExamCommitteeHead>
+
+<President, Staff>
+
+<President, DeanOfAdmissions>
+
+<President, Lecturer>
+
+<President, AssistantProf>
+
+<President, AssociateProf>
+
+<President, Professor>
+
+<President, FullTimeEmployee>
+
+<President, Provost>
+
+<Provost, Dean>
+<President, Dean>
+
+;
+
+SPEC
+quser1 HonorsStudent;
+

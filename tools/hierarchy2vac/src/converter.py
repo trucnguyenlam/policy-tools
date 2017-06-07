@@ -114,14 +114,14 @@ def generatePolicy(args):
             old_userstr += name + "\n"
             # userlist.append(name)
             # For init
-            initstr += "<" + name
+            initstr += "<" + name + ":"
             for r in policy.roles:
                 if getChoiceByPercent(args.density):
-                    initstr += ", " + str(r) + "=1"
+                    initstr += str(r) + "=1,"
                     old_uastr += "<" + name + ", " + str(r) + ">\n"
                 else:
-                    initstr += ", " + str(r) + "=0"
-            initstr += '>\n'
+                    initstr += str(r) + "=0,"
+            initstr = initstr[:-1] + '>\n'
 
         old_unlimituserstr = "NEWUSERS\n"
         for i in range(0, args.nnewuser):
@@ -129,15 +129,15 @@ def generatePolicy(args):
             userstr += name + "*\n"
             # userlist.append(name)
             # For init
-            initstr += "<" + name
+            initstr += "<" + name + ":"
             tmplist = []
             for r in policy.roles:
                 if getChoiceByPercent(args.density):
-                    initstr += ", " + str(r) + "=1"
+                    initstr += str(r) + "=1,"
                     tmplist.append(str(r))
                 else:
-                    initstr += ", " + str(r) + "=0"
-            initstr += '>\n'
+                    initstr += str(r) + "=0,"
+            initstr = initstr[:-1] + '>\n'
             if len(tmplist) > 0:
                 old_unlimituserstr += "<" + name + ", " + "& ".join(tmplist) + ">\n"
         old_unlimituserstr += ";\n\n"
@@ -148,11 +148,11 @@ def generatePolicy(args):
             userstr += name + "\n"
             old_userstr += name + "\n"
             if len(ua) > 0:
-                initstr += "<" + name
+                initstr += "<" + name + ":"
                 for r in ua:
-                    initstr += ", " + str(r) + "=1"
+                    initstr += str(r) + "=1,"
                     old_uastr += "<" + name + ", " + str(r) + ">\n"
-                initstr += '>\n'
+                initstr = initstr[:-1] + '>\n'
 
         querystr = "QUERY\n"
         old_querystr = "SPEC\n"

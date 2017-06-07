@@ -1,0 +1,302 @@
+USERS
+user0
+user1
+user2
+user3
+user4
+user5
+user6
+user7
+user8
+user9
+user10
+user11
+user12
+user13
+user14
+user15
+user16
+user17
+user18
+user19
+user20
+user21
+user22
+user23
+user24
+user25
+user26
+user27
+user28
+user29
+user30
+user31
+user32
+user33
+user34
+user35
+user36
+user37
+user38
+user39
+user40
+user41
+user42
+user43
+user44
+user45
+user46
+user47
+user48
+user49
+user50
+user51
+user52
+user53
+user54
+user55
+user56
+user57
+user58
+user59
+user60
+user61
+user62
+user63
+user64
+user65
+user66
+user67
+user68
+user69
+user70
+user71
+user72
+user73
+user74
+user75
+user76
+user77
+user78
+user79
+user80
+user81
+user82
+user83
+user84
+user85
+user86
+user87
+user88
+user89
+user90
+user91
+user92
+user93
+user94
+user95
+user96
+user97
+user98
+quser0
+quser1
+;
+
+NEWUSERS
+;
+
+ROLES
+Employee
+Agent
+Doctor
+Manager
+MedicalManager
+MedicalTeam
+Nurse
+Patient
+PrimaryDoctor
+ReferredDoctor
+Receptionist
+ThirdParty
+PatientWithTPC
+;
+
+UA
+<user0, Employee>
+<user0, Doctor>
+<user0, ThirdParty>
+<user1, PatientWithTPC>
+<user2, Manager>
+<user3, ReferredDoctor>
+<user5, Receptionist>
+<user8, Employee>
+<user8, MedicalTeam>
+<user8, Receptionist>
+<user9, Manager>
+<user9, MedicalManager>
+<user11, Doctor>
+<user11, ThirdParty>
+<user13, PrimaryDoctor>
+<user14, Manager>
+<user17, Patient>
+<user17, PatientWithTPC>
+<user18, Employee>
+<user18, Receptionist>
+<user19, MedicalManager>
+<user19, PrimaryDoctor>
+<user21, Doctor>
+<user23, Patient>
+<user24, Agent>
+<user26, MedicalManager>
+<user26, PatientWithTPC>
+<user29, Employee>
+<user29, Patient>
+<user30, Employee>
+<user30, Patient>
+<user31, MedicalTeam>
+<user31, PrimaryDoctor>
+<user33, MedicalManager>
+<user34, PatientWithTPC>
+<user35, MedicalManager>
+<user35, MedicalTeam>
+<user35, ReferredDoctor>
+<user36, Employee>
+<user36, Agent>
+<user36, Receptionist>
+<user37, Doctor>
+<user37, Nurse>
+<user39, Nurse>
+<user39, ReferredDoctor>
+<user40, MedicalManager>
+<user40, Nurse>
+<user41, Doctor>
+<user42, Employee>
+<user42, ReferredDoctor>
+<user44, Employee>
+<user45, PrimaryDoctor>
+<user45, Receptionist>
+<user45, ThirdParty>
+<user46, Nurse>
+<user46, Receptionist>
+<user48, Doctor>
+<user48, ThirdParty>
+<user49, Receptionist>
+<user49, PatientWithTPC>
+<user50, Agent>
+<user50, Doctor>
+<user50, Manager>
+<user50, Receptionist>
+<user51, Agent>
+<user51, ThirdParty>
+<user53, ReferredDoctor>
+<user54, Manager>
+<user54, PrimaryDoctor>
+<user54, Receptionist>
+<user55, Manager>
+<user55, Patient>
+<user56, Employee>
+<user61, Employee>
+<user62, ReferredDoctor>
+<user63, ReferredDoctor>
+<user63, PatientWithTPC>
+<user64, Doctor>
+<user64, MedicalTeam>
+<user64, ThirdParty>
+<user65, Doctor>
+<user65, ReferredDoctor>
+<user65, ThirdParty>
+<user66, Doctor>
+<user66, ThirdParty>
+<user67, ReferredDoctor>
+<user68, Agent>
+<user71, MedicalManager>
+<user71, PrimaryDoctor>
+<user71, ReferredDoctor>
+<user71, ThirdParty>
+<user74, Employee>
+<user74, Doctor>
+<user76, ThirdParty>
+<user81, Employee>
+<user81, Manager>
+<user82, Doctor>
+<user82, MedicalManager>
+<user82, Nurse>
+<user82, PatientWithTPC>
+<user84, PrimaryDoctor>
+<user85, MedicalManager>
+<user87, MedicalTeam>
+<user87, ReferredDoctor>
+<user88, Employee>
+<user88, PrimaryDoctor>
+<user89, Doctor>
+<user89, PatientWithTPC>
+<user92, ThirdParty>
+<user93, Employee>
+<user93, Patient>
+<user95, Doctor>
+<user95, MedicalManager>
+<user96, PrimaryDoctor>
+<quser0, Doctor>
+;
+
+CA
+<Doctor, TRUE, ThirdParty>
+
+<Doctor, Doctor, ReferredDoctor>
+
+<MedicalManager, Doctor, MedicalTeam>
+
+<MedicalManager, Nurse, MedicalTeam>
+
+<Manager, TRUE, Employee>
+
+<Manager, TRUE, MedicalManager>
+
+<Manager, TRUE, Receptionist>
+
+<Manager, TRUE, Nurse>
+
+<Manager, TRUE, Doctor>
+
+<Patient, TRUE, Agent>
+
+<Patient, Doctor, PrimaryDoctor>
+
+<Receptionist, TRUE, Patient>
+
+<ThirdParty, Patient, PatientWithTPC>
+
+;
+
+CR
+<Doctor, ThirdParty>
+
+<Doctor, ReferredDoctor>
+
+<MedicalManager, MedicalTeam>
+
+<MedicalManager, MedicalTeam>
+
+<Manager, Employee>
+
+<Manager, MedicalManager>
+
+<Manager, Receptionist>
+
+<Manager, Nurse>
+
+<Manager, Doctor>
+
+<Patient, Agent>
+
+<Patient, PrimaryDoctor>
+
+<Doctor, Patient>
+
+<ThirdParty, PatientWithTPC>
+
+;
+
+SPEC
+quser1 PatientWithTPC;
+

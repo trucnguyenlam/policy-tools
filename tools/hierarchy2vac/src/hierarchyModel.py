@@ -129,27 +129,15 @@ class CARule:
         return "can_assign(%s, %s, %s)" % (
             self.admin, str(self.precondition), self.target)
 
-    def toVACRule(self):
-        ret = ""
-        ret += "<"
-        ret += "a." + self.admin + "=1"
-        if not self.precondition.isTrue:
-            for c in self.precondition.conjunct:
-                value = "0" if c.negative else "1"
-                ret += " & " + "t." + c.name + value
-        ret += ", t." + self.target + "=1"
-        ret += ">"
-        return ret
-
     def toVACRuleWithHierarchy(self, hier):
         ret = ""
         ret += "<"
         ret += "(a.%s=1" % self.admin
         for sr in hier.getSuperiorRoles(self.admin):
             ret += " | a.%s=1" % sr
-        ret += ')'
+        ret += '),'
         if not self.precondition.isTrue:
-            ret += " & ("
+            ret += " ("
             for index, c in enumerate(self.precondition.conjunct):
                 if index != 0:
                     ret += " & "
@@ -164,7 +152,9 @@ class CARule:
                         ret += " | t.%s=1" % sr
                     ret += ")"
             ret += ")"
-        ret += ", t." + self.target + "=1"
+        else:
+            ret += "TRUE"
+        ret += ": t." + self.target + "=1"
         ret += ">"
         return ret
 
@@ -223,16 +213,12 @@ class CRRule:
     def __str__(self):
         return "can_revoke(" + self.admin + ',' + self.target + ')'
 
-    def toVACRule(self):
-        ret = "<a.%s=1, t.%s=0>" % (self.admin, self.target)
-        return ret
-
     def toVACRuleWithHierarchy(self, hier):
         ret = ""
         ret += "<a.%s=1" % self.admin
         for sr in hier.getSuperiorRoles(self.admin):
             ret += " | a.%s=1" % sr
-        ret += ', t.%s=0>' % self.target
+        ret += ', TRUE: t.%s=0>' % self.target
         return ret
 
     def toVACRuleExplodeHierarchy(self, hier):
